@@ -4,9 +4,9 @@ function logrank(x1,x2,varargin)
 % hypothesis test called the log rank test. It is used to test the null
 % hypothesis that there is no difference between the population survival
 % curves (i.e. the probability of an event occurring at any time point is
-% the same for each population). This function use the Kaplan-Meier
-% procedure to estimate the survival function, so it is mandatory to download
-% KMPLOT (http://www.mathworks.com/matlabcentral/fileexchange/22293).
+% the same for each population). This function uses the Kaplan-Meier
+% procedure to estimate the survival function (KMPLOT), so if it misses, 
+% logrank will try to download it from FEX.
 %
 % Syntax: 	logrank(x1,x2,alpha,censflag)
 %      
