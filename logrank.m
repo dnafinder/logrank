@@ -27,7 +27,7 @@ function logrank(x1,x2,varargin)
 %           Log-rank statistics
 %
 %      Example: 
-%           load('logrankdemo.mat')
+%           load('logrank.mat')
 %           logrank(x,y)
 %
 % LOG-RANK TEST FOR KAPLAN-MEIER SURVIVAL FUNCTIONS
@@ -35,17 +35,17 @@ function logrank(x1,x2,varargin)
 %                    Curve_1     Curve_2 
 %                    ________    ________
 % 
-%     Hazard_rate    0.087047    0.034347
+%     Hazard_rate    0.054452    0.043966
 % 
 %     Mantel_Haenszel_Hazard_ratio    Confidence_Interval
 %     ____________________________    ___________________
 % 
-%     9.5419                          3.1781    28.649   
+%     2.3016                          1.1452    4.6257   
 % 
 %       UL      Standard_error      z       alpha    two_tailed_p_value      Comment  
 %     ______    ______________    ______    _____    __________________    ___________
 % 
-%     7.1692    1.7828            3.7409    0.05     0.00018334            'Reject Ho'
+%     6.5723    2.8079            2.1626    0.05     0.030574              'Reject Ho'
 %
 %           Created by Giuseppe Cardillo
 %           giuseppe.cardillo-edta@poste.it
