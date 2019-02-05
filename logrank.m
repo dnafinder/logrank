@@ -71,14 +71,7 @@ assert(all(x2(:,2)==0 | x2(:,2)==1),'Warning: all x2(:,2) values must be 0 or 1'
 %tables of censored data (table12 and table 22), Kaplan-Meier variables
 %(t1, t2, T1 and T2) and Kaplan-Meier graphical data for censored data 
 %(xcg and ycg).
-if exist('kmplot.m','file')==0
-    filename=unzip('https://it.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/22293/versions/10/download/zip','prova');
-    Index = contains(filename,'kmplot.m');
-    current=cd;
-    copyfile(filename{Index},current)
-    rmdir('prova','s')
-    clear filename Index current
-end
+assert(exist('kmplot.m','file')~=0,'You must download kmplot function from https://it.mathworks.com/matlabcentral/fileexchange/22293-kmplot')
 
 [table1, table12, t1, T1, xcg1, ycg1, lambda1]=kmplot(x1,alpha,cflag,0);
 [table2, table22, t2, T2, xcg2, ycg2, lambda2]=kmplot(x2,alpha,cflag,0);
